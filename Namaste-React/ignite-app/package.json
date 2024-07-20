@@ -1,0 +1,17 @@
+{
+  "name": "ignite-app",
+  "version": "1.0.0",
+  "description": "this is the ignited app of react js made while learning react js ",
+  "main": "react1.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "nischal bhattarai",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
