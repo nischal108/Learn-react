@@ -4,70 +4,110 @@ export const restaurantData = [
     name: "Fast as Quick",
     type: "Fast Food",
     rating: 4.5,
-    image: "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "123 Quick St, Fast City, FC 12345",
+    contact: "(123) 456-7890",
+    openingHours: "10:00 AM - 11:00 PM",
+    website: "https://www.fastasquick.com"
   },
   {
     id: 2,
     name: "Spicy Delight",
     type: "Indian Cuisine",
     rating: 4.7,
-    image: "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "456 Curry Blvd, Spice Town, ST 67890",
+    contact: "(234) 567-8901",
+    openingHours: "11:00 AM - 10:00 PM",
+    website: "https://www.spicydelight.com"
   },
   {
     id: 3,
     name: "Green Feast",
     type: "Vegetarian",
     rating: 4.2,
-    image: "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "789 Veggie Way, Plant City, PC 23456",
+    contact: "(345) 678-9012",
+    openingHours: "9:00 AM - 9:00 PM",
+    website: "https://www.greenfeast.com"
   },
   {
     id: 4,
     name: "Seafood Paradise",
     type: "Seafood",
     rating: 4.8,
-    image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "101 Ocean Ave, Beachside, BS 34567",
+    contact: "(456) 789-0123",
+    openingHours: "12:00 PM - 10:00 PM",
+    website: "https://www.seafoodparadise.com"
   },
   {
     id: 5,
     name: "Sweet Tooth",
     type: "Desserts",
     rating: 4.9,
-    image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "202 Dessert St, Sugar City, SC 45678",
+    contact: "(567) 890-1234",
+    openingHours: "11:00 AM - 10:00 PM",
+    website: "https://www.sweettooth.com"
   },
   {
     id: 6,
     name: "Grill Master",
     type: "Barbecue",
     rating: 4.6,
-    image: "https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "303 BBQ Lane, Grilltown, GT 56789",
+    contact: "(678) 901-2345",
+    openingHours: "12:00 PM - 11:00 PM",
+    website: "https://www.grillmaster.com"
   },
   {
     id: 7,
     name: "Pasta Heaven",
     type: "Italian",
     rating: 4.7,
-    image: "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "404 Italian St, Rome City, RC 67890",
+    contact: "(789) 012-3456",
+    openingHours: "11:00 AM - 10:00 PM",
+    website: "https://www.pastaheaven.com"
   },
   {
     id: 8,
     name: "Sushi World",
     type: "Japanese",
     rating: 4.8,
-    image: "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "505 Sushi Blvd, Tokyotown, TT 78901",
+    contact: "(890) 123-4567",
+    openingHours: "12:00 PM - 10:00 PM",
+    website: "https://www.sushiworld.com"
   },
   {
     id: 9,
     name: "Taco Fiesta",
     type: "Mexican",
     rating: 4.6,
-    image: "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "606 Fiesta Ave, Mexicoville, MV 89012",
+    contact: "(901) 234-5678",
+    openingHours: "11:00 AM - 10:00 PM",
+    website: "https://www.tacofiesta.com"
   },
   {
     id: 10,
     name: "Vegan Delight",
     type: "Vegan",
     rating: 4.4,
-    image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "707 Veggie Blvd, Plant City, PC 23456",
+    contact: "(012) 345-6789",
+    openingHours: "10:00 AM - 9:00 PM",
+    website: "https://www.vegandelight.com"
   },
   {
     id: 11,
@@ -75,12 +115,108 @@ export const restaurantData = [
     type: "French",
     rating: 4.7,
     image: "https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "808 French St, Parisville, PV 34567",
+    contact: "(123) 456-7890",
+    openingHours: "10:00 AM - 10:00 PM",
+    website: "https://www.bistrobliss.com"
   },
   {
     id: 12,
     name: "Pizza Palace",
     type: "Pizza",
     rating: 4.5,
-    image: "https://images.pexels.com/photos/2619970/pexels-photo-2619970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/2619970/pexels-photo-2619970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "909 Pizza Lane, Cheesetown, CT 45678",
+    contact: "(234) 567-8901",
+    openingHours: "11:00 AM - 11:00 PM",
+    website: "https://www.pizzapalace.com"
+  },
+  {
+    id: 13,
+    name: "Burger Bonanza",
+    type: "Burgers",
+    rating: 4.6,
+    image: "https://images.pexels.com/photos/1639563/pexels-photo-1639563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "1010 Burger Ave, Pattytown, PT 56789",
+    contact: "(345) 678-9012",
+    openingHours: "12:00 PM - 10:00 PM",
+    website: "https://www.burgerbonanza.com"
+  },
+  {
+    id: 14,
+    name: "Noodle Nirvana",
+    type: "Chinese",
+    rating: 4.7,
+    image: "https://images.pexels.com/photos/1123253/pexels-photo-1123253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "1111 Noodle St, Chinatown, CT 67890",
+    contact: "(456) 789-0123",
+    openingHours: "11:00 AM - 10:00 PM",
+    website: "https://www.noodlenirvana.com"
+  },
+  {
+    id: 15,
+    name: "Kebab Kingdom",
+    type: "Middle Eastern",
+    rating: 4.8,
+    image: "https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "1212 Kebab Blvd, Mideast City, MC 78901",
+    contact: "(567) 890-1234",
+    openingHours: "12:00 PM - 11:00 PM",
+    website: "https://www.kebabkingdom.com"
+  },
+  {
+    id: 16,
+    name: "BBQ Barn",
+    type: "Barbecue",
+    rating: 4.7,
+    image: "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "1313 BBQ Rd, Grilltown, GT 89012",
+    contact: "(678) 901-2345",
+    openingHours: "11:00 AM - 10:00 PM",
+    website: "https://www.bbqbarn.com"
+  },
+  {
+    id: 17,
+    name: "Thai Terrace",
+    type: "Thai",
+    rating: 4.8,
+    image: "https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "1414 Thai St, Bangkok City, BC 90123",
+    contact: "(789) 012-3456",
+    openingHours: "11:00 AM - 10:00 PM",
+    website: "https://www.thaiterrace.com"
+  },
+  {
+    id: 18,
+    name: "Greek Gourmet",
+    type: "Greek",
+    rating: 4.6,
+    image: "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "1515 Greek Ave, Athensville, AV 90124",
+    contact: "(890) 123-4567",
+    openingHours: "10:00 AM - 10:00 PM",
+    website: "https://www.greekgourmet.com"
+  },
+  {
+    id: 19,
+    name: "Korean Kitchen",
+    type: "Korean",
+    rating: 4.8,
+    image: "https://images.pexels.com/photos/956000/pexels-photo-956000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "1616 Seoul St, Koreatown, KT 12345",
+    contact: "(901) 234-5678",
+    openingHours: "11:00 AM - 10:00 PM",
+    website: "https://www.koreankitchen.com"
+  },
+  {
+    id: 20,
+    name: "Steakhouse Supreme",
+    type: "Steakhouse",
+    rating: 4.9,
+    image: "https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    address: "1717 Steakhouse Ln, Meat City, MC 23456",
+    contact: "(012) 345-6789",
+    openingHours: "12:00 PM - 11:00 PM",
+    website: "https://www.steakhousesupreme.com"
   }
 ];

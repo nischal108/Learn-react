@@ -32,11 +32,13 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 .menu-items li {
   margin-left: 20px;
   cursor: pointer;
+  color: white;
 }
 
 .menu-items li:hover {
@@ -67,9 +69,26 @@ body {
   transition: background-color 0.3s ease;
   margin-right: 10px; 
 }
+.search-bar{
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.search-btn {
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; 
+}
 .search-bar input {
-  width: 100%;
-  padding: 10px;
+  width: 30%;
+  padding: 4px 10px;
   font-size: 16px;
 }
 
@@ -109,4 +128,126 @@ body {
 .res-card p {
   margin: 5px 0;
   color: #666;
+}
+/* Shimmer.css */
+
+.shimmer-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.shimmer-card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-img {
+  width: 100%;
+  height: 180px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.shimmer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shimmer-line {
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+.shimmer-title {
+  width: 60%;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.shimmer-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    #f0f0f0 0%,
+    #e0e0e0 20%,
+    #f0f0f0 40%,
+    #f0f0f0 100%
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+
+
+/* //error css */
+
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.error-container {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.error-title {
+  font-size: 2.5rem;
+  color: #e74c3c;
+}
+
+.error-message {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.error-details {
+  font-size: 1rem;
+  color: #555;
+}
+
+.error-home-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #3498db;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.error-home-link:hover {
+  background-color: #2980b9;
 }
