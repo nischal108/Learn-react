@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ResCard from "./ResCard";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
+import {IMAGES_FOODS_URL} from "../../utils/constants"
 
 const Body = () => {
   const [resData, setResData] = useState([]);
@@ -13,8 +15,7 @@ const Body = () => {
       try {
         const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6510461&lng=77.2202992&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const data = await response.json();
-        const initialData = data.data.cards[4].card.card.gridElements.infoWithStyle.restaurants;
-        console.log(data.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+        const initialData = data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
         setResData(initialData);
         setFilteredRestaurants(initialData);
         setLoading(false); 
@@ -30,14 +31,14 @@ const Body = () => {
   const handleSearch = () => {
     setFilteredRestaurants(
       resData.filter((restaurant) =>
-        restaurant.name.toLowerCase().includes(searchedText.toLowerCase())
+        restaurant.info.name.toLowerCase().includes(searchedText.toLowerCase())
       )
     );
   };
 
   const handleFilterByRating = () => {
     setFilteredRestaurants(
-      resData.filter((restaurant) => restaurant.rating > 4.5)
+      resData.filter((restaurant) => restaurant.info.avgRating > 4.5)
     );
   };
 
@@ -56,7 +57,7 @@ const Body = () => {
       </div>
       <div className="btns">
         <button className="btn" onClick={handleFilterByRating}>
-          Filter by Rating
+          Filter High Rated
         </button>
       </div>
       <div className="res-cards">
@@ -69,13 +70,15 @@ const Body = () => {
           </>
         ) : (
           filteredRestaurants.map((restaurant) => (
-            <ResCard
-              key={restaurant.info.id}
+            <Link  key={restaurant.info.id}
+             to={"/restaurant/"+restaurant.info.id}>
+              <ResCard
               name={restaurant.info.name}
               type={restaurant.info.locality}
               rating={restaurant.info.avgRating}
-              image={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + restaurant.info.cloudinaryImageId}
+              image={IMAGES_FOODS_URL + restaurant.info.cloudinaryImageId}
             />
+            </Link>
           ))
         )}
       </div>
