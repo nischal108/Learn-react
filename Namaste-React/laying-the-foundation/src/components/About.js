@@ -36,19 +36,30 @@ class About extends React.Component {
       followers,
       following,
     } = userinfo;
+
     return (
-      <div className="about-card">
-        <div className="profile-picture">
-          <img src={avatar_url} alt={`${name}'s avatar`} />
+      <div className="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-md max-w-md mx-auto mt-6">
+        <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
+          <img
+            src={avatar_url}
+            alt={`${name}'s avatar`}
+            className="w-full h-full object-cover"
+          />
         </div>
-        <div className="profile-info">
-          <h1>{name}</h1>
-          <h2>{location}</h2>
-          <p>{bio}</p>
-          <div className="additional-info">
-            <p>Public Repositories: {public_repos}</p>
-            <p>Followers: {followers}</p>
-            <p>Following: {following}</p>
+        <div className="text-center">
+          <h1 className="text-2xl font-bold text-gray-800 mb-1">{name}</h1>
+          <h2 className="text-lg text-gray-600 mb-2">{location}</h2>
+          <p className="text-sm text-gray-700 mb-4">{bio}</p>
+          <div className="text-gray-600">
+            <p className="mb-1">
+              <strong>Public Repositories:</strong> {public_repos}
+            </p>
+            <p className="mb-1">
+              <strong>Followers:</strong> {followers}
+            </p>
+            <p className="mb-1">
+              <strong>Following:</strong> {following}
+            </p>
           </div>
         </div>
       </div>

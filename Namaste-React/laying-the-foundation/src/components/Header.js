@@ -3,18 +3,16 @@ import { LOGO_URL } from "../../utils/constants";
 
 const Header = () => {
   return (
-    <div className="header">
-      <div className="logo-container">
-        <img src={LOGO_URL} alt="Logo" />
+    <div className="flex items-center justify-between p-4 bg-white shadow-md  ">
+      <div className="flex items-center">
+        <img src={LOGO_URL} alt="Logo" className="h-16 w-16 object-cover" />
       </div>
-      <div className="menu-items">
-        <ul>
-          <Link to="/"><li>Home</li></Link>
-          <Link to="/about"><li>About</li></Link>
-          <Link to="/popular"><li>Popular</li></Link>
-          <Link to="/restaurants"><li>Restaurants</li></Link>
-          <Link to="/contact"><li>Contacts</li></Link>
-        </ul>
+      <div className="flex space-x-6">
+        <Link to="/" className="text-gray-700 hover:text-gray-900">Home</Link>
+        <Link to="/about" className="text-gray-700 hover:text-gray-900">About</Link>
+        <Link to="/popular" className="text-gray-700 hover:text-gray-900">Popular</Link>
+        <Link to="/restaurants" className="text-gray-700 hover:text-gray-900">Restaurants</Link>
+        <Link to="/contact" className="text-gray-700 hover:text-gray-900">Contacts</Link>
       </div>
     </div>
   );
