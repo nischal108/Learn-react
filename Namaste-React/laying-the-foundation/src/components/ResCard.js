@@ -18,7 +18,7 @@ export default ResCard;
 
 
 export const VegResCard = (WrappedComponent) => {
-  return (data) => {
+  return ({data}) => {
     return (
       <div className="relative">
         <p className='absolute px-4 py-1 bg-green-500 text-white rounded-md shadow-md'>
