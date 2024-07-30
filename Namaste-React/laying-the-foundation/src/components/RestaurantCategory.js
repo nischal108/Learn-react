@@ -6,8 +6,8 @@ const RestaurantCategory = ({ data, isExpanded, setIndexExpanded, index }) => {
   };
 
   return (
-    <div className="my-4 p-4 border rounded-md bg-slate-100 shadow-lg cursor-pointer" onClick={handleToggle}>
-      <div className="flex items-center justify-between">
+    <div className="my-4 p-4 border rounded-md bg-slate-100 shadow-lg cursor-pointer">
+      <div className="flex items-center justify-between" onClick={handleToggle}>
         <h3 className="text-lg font-semibold">
           {data.card.card.title} ({data.card.card.itemCards.length})
         </h3>

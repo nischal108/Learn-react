@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -7,18 +7,31 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantProfile from "./components/RestaurantProfile";
+import Cart from "./components/Cart";
+import UserContext from "../utils/loggedUserContext";
+import appStore from "../utils/appStore";
+import {Provider} from 'react-redux';
+const About = lazy(()=> import("./components/About"));
 
-const About = lazy(()=> import("./components/About"))
+
 
 const Main = () => {
+  const [user, setUser] = useState({
+    username: "guest",
+    isLoggedIn: false
+  });
+
   return (
-    <div className="main-div">
-      <Header />
-      <Outlet/>
-    </div>
+    <Provider store={appStore}>
+    <UserContext.Provider value={[user, setUser]}>
+      <div className="main-div">
+        <Header />
+        <Outlet />
+      </div>
+    </UserContext.Provider>
+    </Provider>
   );
 };
-
 //router configurations
 
 const appRouter = createBrowserRouter([
@@ -43,7 +56,12 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurant/:id",
         element: <RestaurantProfile />,
-      }
+      },
+      {
+        path: "/cart",
+        element: <Cart/>,
+
+      },
     ],
     errorElement: <Error />,
   },
