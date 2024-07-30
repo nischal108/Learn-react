@@ -8,7 +8,7 @@ const cartSlice = createSlice({
   reducers: {
     addItem: (state, action) => {
       const item = action.payload;
-      // Set default quantity to 1 if not already set
+      // Set default quantity to 1
       if (item.quantity == null) {
         item.quantity = 1;
       }
