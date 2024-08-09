@@ -1,0 +1,20 @@
+/* src/index.css or src/main.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.loader {
+    width: 100%;
+    animation: shrink 3s linear forwards;
+  }
+  
+  @keyframes shrink {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+  
