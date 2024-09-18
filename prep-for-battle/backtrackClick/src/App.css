@@ -1,0 +1,23 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2vw;
+}
+
+.box{
+  width: 89px;
+  height: 89px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.yellow{
+  background-color: yellow;
+}
+
+.green{
+  background-color: green;
+}
+
+.default{
+  background-color: antiquewhite;
+}

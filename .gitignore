@@ -4,3 +4,6 @@ dist
 .parcel-cache
 /coverage
 coverage
+prep-for-battle/backtrackClick/.gitignore
+prep-for-battle/backtrackClick/README.md
+prep-for-battle/backtrackClick/src/vite-env.d.ts
